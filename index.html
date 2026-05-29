@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Digital Equity Africa | Shaping Africa’s Digital Future</title>
+  <meta name="title" content="Digital Equity Africa | Shaping Africa’s Digital Future">
+  <meta name="description" content="Unlocking Africa's digital future. Strategic solutions for inclusive, equitable growth across governments, business & communities through digital skills, innovation, and policy advisory.">
+  <meta name="keywords" content="digital inclusion Africa, digital equity Africa, digital transformation Africa, African digital economy, inclusive technology solutions, digital strategy consulting, ICT for development, ICT4D">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://digitalequity.africa/">
+  <meta property="og:title" content="Digital Equity Africa | Shaping Africa’s Digital Future">
+  <meta property="og:description" content="Strategic solutions for inclusive, equitable growth across governments, business & communities through digital skills, AI literacy, and corporate digitization.">
+  <meta property="og:image" content="assets/digital_future.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ACCESSIBILITY PANEL (Top bar) -->
+  <div class="accessibility-bar" aria-label="Accessibility settings">
+    <div class="accessibility-controls">
+      <!-- Font sizing controls -->
+      <div class="control-group">
+        <span id="font-control-label">Text Size:</span>
+        <button class="acc-btn" id="font-decrease" aria-label="Decrease text size" aria-describedby="font-control-label">A-</button>
+        <button class="acc-btn" id="font-reset" aria-label="Reset text size" aria-describedby="font-control-label">Reset</button>
+        <button class="acc-btn" id="font-increase" aria-label="Increase text size" aria-describedby="font-control-label">A+</button>
+      </div>
+      <!-- Theme/Contrast controls -->
+      <div class="control-group">
+        <span>Contrast:</span>
+        <div class="theme-selector" role="radiogroup" aria-label="Select color contrast theme">
+          <button class="theme-dot light" data-theme-choice="light" role="radio" aria-checked="true" aria-label="Light Contrast Mode"></button>
+          <button class="theme-dot dark" data-theme-choice="dark" role="radio" aria-checked="false" aria-label="Dark Contrast Mode"></button>
+          <button class="theme-dot hc" data-theme-choice="high-contrast" role="radio" aria-checked="false" aria-label="High Contrast Mode"></button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Simplified Layout Switcher -->
+    <div>
+      <button class="acc-btn mode-toggle-btn" id="layout-toggle" aria-pressed="false">
+        Switch to Simplified View
+      </button>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER & NAV -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#home" class="logo-link" id="logo-main">
+        <div class="logo-icon" aria-hidden="true">D</div>
+        <span>Digital Equity <span style="color: var(--color-secondary);">Africa</span></span>
+      </a>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger" id="hamburger-btn" aria-expanded="false" aria-controls="nav-menu-list" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Main Navigation Menu -->
+      <nav id="nav-navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#products" class="nav-link">Our Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="main-content">
+
+    <!-- HERO SECTION WITH SLIDESHOW -->
+    <section id="home" class="hero-section" aria-label="Welcome Slider">
+      <div class="slides-container" id="hero-slider">
+        
+        <!-- Slide 1: Mission Intro -->
+        <div class="slide active" style="background-image: url('assets/digital_future.png');" id="slide-1" role="group" aria-roledescription="slide" aria-label="1 of 4: Empowering Africa's Future">
+          <div class="slide-content-wrapper">
+            <div class="slide-text">
+              <span class="slide-tag">Digital Equity Africa</span>
+              <h1 class="slide-title">Shaping Africa’s Digital Future</h1>
+              <p class="slide-desc">“Empowering Africa’s Future Through Digital Skills, Innovation, and Inclusion.” We work to close the digital divide across the continent with sustainable, local innovation.</p>
+              <div class="hero-btn-container">
+                <a href="#about" class="btn btn-primary">Learn About Us</a>
+                <a href="#products" class="btn btn-secondary">Our Solutions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Data Inclusion Slide -->
+        <div class="slide" style="background-color: #0f172a;" id="slide-2" role="group" aria-roledescription="slide" aria-label="2 of 4: Digital Inclusion Data">
+          <div class="slide-content-wrapper">
+            <div class="slide-data-layout">
+              <div class="slide-text">
+                <span class="slide-tag">State of Inclusion</span>
+                <h2 class="slide-title" style="color: #ffffff;">The Digital Divide in Africa</h2>
+                <p class="slide-desc">To achieve full economic participation, Africa needs immediate, structured digital infrastructure and literacy growth. We target bridging these statistics by building future-ready capacity.</p>
+                <div class="hero-btn-container">
+                  <a href="#products" class="btn btn-primary">See Literacy Programs</a>
+                </div>
+              </div>
+              
+              <!-- Interactive Visual Infographics Card -->
+              <div class="slide-data-graphic">
+                <h3 class="graphic-title">Key Digital Access Indicators</h3>
+                
+                <div class="stat-bar-group">
+                  <div class="stat-label">
+                    <span>Sub-Saharan Internet Penetration</span>
+                    <span>43%</span>
+                  </div>
+                  <div class="stat-bar-container">
+                    <div class="stat-bar-fill" style="--target-width: 43%;"></div>
+                  </div>
+                </div>
+
+                <div class="stat-bar-group">
+                  <div class="stat-label">
+                    <span>Youth AI & Emerging Tech Literacy</span>
+                    <span>15%</span>
+                  </div>
+                  <div class="stat-bar-container">
+                    <div class="stat-bar-fill" style="--target-width: 15%;"></div>
+                  </div>
+                </div>
+
+                <div class="stat-bar-group">
+                  <div class="stat-label">
+                    <span>Our Target Inclusion Goal by 2030</span>
+                    <span>100%</span>
+                  </div>
+                  <div class="stat-bar-container">
+                    <div class="stat-bar-fill" style="--target-width: 100%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Kids Tech Fest -->
+        <div class="slide" style="background-image: url('assets/kids_tech.png');" id="slide-3" role="group" aria-roledescription="slide" aria-label="3 of 4: Kids Tech Fest">
+          <div class="slide-content-wrapper">
+            <div class="slide-text">
+              <span class="slide-tag">Flagship Initiative</span>
+              <h2 class="slide-title">Kids Tech Fest</h2>
+              <p class="slide-desc">Introducing children and youth to technology, creativity, and artificial intelligence through hands-on learning. Bridging the divide from the roots up.</p>
+              <div class="hero-btn-container">
+                <a href="#products" class="btn btn-teal" onclick="openBooking('Kids Tech Fest')">Partner for Kids Tech Fest</a>
+                <a href="https://www.kidstechfest.com" target="_blank" rel="noopener" class="btn btn-secondary">Visit Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Corporate Digitization -->
+        <div class="slide" style="background-image: url('assets/corporate_digitization.png');" id="slide-4" role="group" aria-roledescription="slide" aria-label="4 of 4: Corporate Digitization">
+          <div class="slide-content-wrapper">
+            <div class="slide-text">
+              <span class="slide-tag">Strategic Solutions</span>
+              <h2 class="slide-title">Corporate Digitization</h2>
+              <p class="slide-desc">Helping government agencies, development institutions, and corporate organizations move from legacy structures into modern, digitally enabled ecosystems.</p>
+              <div class="hero-btn-container">
+                <a href="#products" class="btn btn-primary">Explore Services</a>
+                <a href="#contact" class="btn btn-secondary">Get Free Consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Slideshow Navigation Controls -->
+      <button class="slide-arrow slide-arrow-left" id="slide-prev" aria-label="Previous slide">&#10094;</button>
+      <button class="slide-arrow slide-arrow-right" id="slide-next" aria-label="Next slide">&#10095;</button>
+      
+      <div class="slide-dots" id="slide-dots-indicator" aria-label="Slideshow page indicator">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="section-title-wrapper">
+        <span class="section-tagline">Who We Are</span>
+        <h2 class="section-title" id="about-heading">About Digital Equity Africa</h2>
+      </div>
+
+      <div class="about-intro-grid">
+        <div class="about-text-card">
+          <p class="lead-p">We are a digital inclusion and transformation consultancy focused on closing the digital divide across Africa through practical, scalable, and inclusive innovation.</p>
+          <p>We work at the intersection of technology, communication, education, and policy to help governments, development partners, corporations, and learning communities navigate digital transformation, amplify impact, and build future-ready ecosystems.</p>
+        </div>
+        
+        <!-- Interactive Card Panels for Vision, Mission, Values -->
+        <div class="mvv-container">
+          <div class="mvv-tabs" role="tablist" aria-label="Core Values, Mission and Vision tabs">
+            <button class="mvv-tab-btn active" id="tab-mission" role="tab" aria-selected="true" aria-controls="pane-mission">Our Mission</button>
+            <button class="mvv-tab-btn" id="tab-vision" role="tab" aria-selected="false" aria-controls="pane-vision">Our Vision</button>
+            <button class="mvv-tab-btn" id="tab-values" role="tab" aria-selected="false" aria-controls="pane-values">Core Values</button>
+          </div>
+          
+          <!-- Pane: Mission -->
+          <div class="mvv-content-pane active" id="pane-mission" role="tabpanel" aria-labelledby="tab-mission">
+            <p>At Digital Equity Africa, our mission is to advance digital inclusion by designing and delivering transformative programs, advisory services, and innovation platforms that equip individuals, institutions, and governments with the skills and systems needed to thrive in a digital-first economy.</p>
+            <p style="margin-top: 1rem;">We bridge the digital divide by building scalable learning ecosystems, strengthening digital capabilities, and enabling meaningful participation in the global technology landscape.</p>
+          </div>
+
+          <!-- Pane: Vision -->
+          <div class="mvv-content-pane" id="pane-vision" role="tabpanel" aria-labelledby="tab-vision">
+            <p>To be Africa’s leading catalyst for inclusive digital transformation—where every individual, regardless of background, has the opportunity to access, shape, and benefit from the digital economy.</p>
+            <p style="margin-top: 1rem;">We envision a continent where inclusive-by-design innovation drives shared prosperity, reduces inequality, and unlocks Africa’s full digital potential.</p>
+          </div>
+
+          <!-- Pane: Values -->
+          <div class="mvv-content-pane" id="pane-values" role="tabpanel" aria-labelledby="tab-values">
+            <div class="values-list">
+              <div class="value-item">
+                <span class="value-num">1</span>
+                <h4 class="value-title">Inclusivity</h4>
+                <p class="value-desc">Accessible, equitable, and inclusive for all regardless of background.</p>
+              </div>
+              <div class="value-item">
+                <span class="value-num">2</span>
+                <h4 class="value-title">Empowerment</h4>
+                <p class="value-desc">Equipping individuals with skills and opportunities to thrive.</p>
+              </div>
+              <div class="value-item">
+                <span class="value-num">3</span>
+                <h4 class="value-title">Collaboration</h4>
+                <p class="value-desc">Working with diverse stakeholders to drive sustainable change.</p>
+              </div>
+              <div class="value-item">
+                <span class="value-num">4</span>
+                <h4 class="value-title">Integrity</h4>
+                <p class="value-desc">Highest standards of transparency, professionalism, and ethics.</p>
+              </div>
+              <div class="value-item" style="grid-column: span 2;">
+                <span class="value-num">5</span>
+                <h4 class="value-title">Impact-Driven</h4>
+                <p class="value-desc">We focus on delivering measurable results that create lasting, positive change in communities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUSTED BY / PARTNERS SCROLL -->
+    <section class="partners-section" aria-label="Our Partners and Collaborators">
+      <h3 class="partners-title">Our Partners</h3>
+      <div class="marquee-container">
+        <div class="marquee-content" id="marquee-holder">
+          <!-- Duplicated for infinite smooth looping effect -->
+          <div class="marquee-logo">UNESCO</div>
+          <div class="marquee-logo">Oracle Academy</div>
+          <div class="marquee-logo">Samsung</div>
+          <div class="marquee-logo">Enugu State Government</div>
+          <div class="marquee-logo">Shecluded</div>
+          <div class="marquee-logo">Kwara State Government</div>
+          <div class="marquee-logo">Line Health</div>
+          <div class="marquee-logo">Alt School</div>
+          <div class="marquee-logo">Federal Ministry of Women Affairs</div>
+          <div class="marquee-logo">Sterling Bank</div>
+          
+          <!-- Repeat elements to complete the continuous loop -->
+          <div class="marquee-logo">UNESCO</div>
+          <div class="marquee-logo">Oracle Academy</div>
+          <div class="marquee-logo">Samsung</div>
+          <div class="marquee-logo">Enugu State Government</div>
+          <div class="marquee-logo">Shecluded</div>
+          <div class="marquee-logo">Kwara State Government</div>
+          <div class="marquee-logo">Line Health</div>
+          <div class="marquee-logo">Alt School</div>
+          <div class="marquee-logo">Federal Ministry of Women Affairs</div>
+          <div class="marquee-logo">Sterling Bank</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR PRODUCTS & SERVICES SECTION -->
+    <section id="products" class="section products-section" aria-labelledby="products-heading">
+      <div class="section-title-wrapper">
+        <span class="section-tagline">What We Deliver</span>
+        <h2 class="section-title" id="products-heading">Our Services & Solutions</h2>
+      </div>
+
+      <!-- Filters/Tabs to target tech/non-tech capabilities -->
+      <div class="filters-container" role="group" aria-label="Filter services by category">
+        <button class="filter-btn active" data-filter="all">All Services</button>
+        <button class="filter-btn" data-filter="digitization">Digitization & Advisory</button>
+        <button class="filter-btn" data-filter="ai-programs">AI & Literacy</button>
+        <button class="filter-btn" data-filter="pr-events">PR & Summits</button>
+      </div>
+
+      <div class="services-grid" id="services-grid-container">
+        
+        <!-- Service 1: Corporate Digitization -->
+        <article class="service-card" data-category="digitization">
+          <div class="service-icon" aria-hidden="true">💻</div>
+          <h3 class="service-title">1. Corporate Digitization</h3>
+          <p class="service-desc">We help organizations move from traditional systems to digitally enabled, future-ready operations. Our focus is not just technology adoption but building smarter workflows, empowered teams, and scalable digital infrastructure.</p>
+          
+          <div class="service-details">
+            <div class="detail-section">
+              <span class="detail-label">What We Deliver</span>
+              <ul class="deliverables-list">
+                <li>Digital transformation strategy & advisory</li>
+                <li>Process digitization & workflow optimization</li>
+                <li>Workforce digital capability building</li>
+                <li>Systems integration & operational redesign</li>
+                <li>Change management & adoption support</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <span class="detail-label">Who This Is For</span>
+              <p class="detail-content">Government agencies, Corporate organizations, Development institutions, SMEs scaling operations.</p>
+            </div>
+          </div>
+          
+          <div class="service-outcome">
+            <strong>Expected Outcome</strong>
+            Improved efficiency, reduced operational bottlenecks, stronger digital capability across teams, and future-ready institutions.
+          </div>
+          
+          <button class="btn btn-primary service-btn" onclick="openBooking('Corporate Digitization')">
+            Book Corporate Digitization
+          </button>
+        </article>
+
+        <!-- Service 2: AI Immersions -->
+        <article class="service-card" data-category="ai-programs">
+          <div class="service-icon" aria-hidden="true">🤖</div>
+          <h3 class="service-title">2. AI Immersions</h3>
+          <p class="service-desc">We design immersive AI learning and exposure experiences that help leaders, teams, and institutions understand how artificial intelligence is reshaping industries, translating global innovation into practical local application.</p>
+          
+          <div class="service-details">
+            <div class="detail-section">
+              <span class="detail-label">What We Deliver</span>
+              <ul class="deliverables-list">
+                <li>Executive AI immersion programs</li>
+                <li>Government & institutional AI briefings</li>
+                <li>Sector-specific AI workshops</li>
+                <li>Innovation lab experiences & simulations</li>
+                <li>Applied AI strategy sessions</li>
+                <li>Kids & youth AI immersion camps</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <span class="detail-label">Who This Is For</span>
+              <p class="detail-content">Government leaders, policymakers, Corporate executives, Innovation teams, Development agencies, Universities.</p>
+            </div>
+          </div>
+          
+          <div class="service-outcome">
+            <strong>Expected Outcome</strong>
+            Clear understanding of AI opportunities, practical use cases for your sector, and actionable pathways for adoption.
+          </div>
+          
+          <button class="btn btn-primary service-btn" onclick="openBooking('AI Immersions')">
+            Schedule AI Immersion
+          </button>
+        </article>
+
+        <!-- Service 3: AI Literacy -->
+        <article class="service-card" data-category="ai-programs">
+          <div class="service-icon" aria-hidden="true">📚</div>
+          <h3 class="service-title">3. AI Literacy & Future-Readiness</h3>
+          <p class="service-desc">We prepare children, young people, and professionals for the future of work through structured AI literacy and digital skills programs, blending creativity, problem-solving, and real-world application.</p>
+          
+          <div class="service-details">
+            <div class="detail-section">
+              <span class="detail-label">What We Deliver</span>
+              <ul class="deliverables-list">
+                <li>AI literacy programs for children and youth</li>
+                <li>Future skills training (digital, creative, innovation)</li>
+                <li>AI summer camps & bootcamps</li>
+                <li>Future Minds learning community programs</li>
+                <li>School & tech education partnerships</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <span class="detail-label">Who This Is For</span>
+              <p class="detail-content">Schools, educational institutions, Parents, guardians, Youth organizations, Governments & ministries.</p>
+            </div>
+          </div>
+          
+          <div class="service-outcome">
+            <strong>Expected Outcome</strong>
+            Learners who are confident with technology, equipped with AI knowledge, and prepared for future careers in a digital economy.
+          </div>
+          
+          <button class="btn btn-primary service-btn" onclick="openBooking('AI Literacy & Future-Readiness')">
+            Partner / Enroll in AI Literacy
+          </button>
+        </article>
+
+        <!-- Service 4: Kids Tech Fest -->
+        <article class="service-card" data-category="pr-events">
+          <div class="service-icon" aria-hidden="true">🎉</div>
+          <h3 class="service-title">4. Kids Tech Fest AI Summit</h3>
+          <p class="service-desc">Our flagship initiative introducing children to technology, creativity, and AI through fun, interactive, hands-on learning experiences. Gathered over 5,000 attendees in Lagos during its maiden edition in 2025.</p>
+          
+          <div class="service-details">
+            <div class="detail-section">
+              <span class="detail-label">What We Deliver</span>
+              <ul class="deliverables-list">
+                <li>Hands-on coding, hardware, and AI workshops</li>
+                <li>Interactive tech exhibitions & playground</li>
+                <li>Creative panels for teachers, parents & children</li>
+                <li>Innovation pitch competitions & showcases</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <span class="detail-label">Who This Is For</span>
+              <p class="detail-content">Children (ages 5-18), parents, teachers, educational institutions, sponsors, ecosystem partners.</p>
+            </div>
+          </div>
+          
+          <div class="service-outcome">
+            <strong>Expected Outcome</strong>
+            Moving children from passive users of technology to confident creators, problem-solvers, and future innovators.
+          </div>
+          
+          <button class="btn btn-teal service-btn" onclick="openBooking('Kids Tech Fest Summit')">
+            Sponsor or Attend Event
+          </button>
+        </article>
+
+        <!-- Service 5: PR & Communications -->
+        <article class="service-card" data-category="pr-events">
+          <div class="service-icon" aria-hidden="true">📢</div>
+          <h3 class="service-title">5. PR & Strategic Communications</h3>
+          <p class="service-desc">We help organizations, governments, and ecosystem players shape powerful narratives, build visibility, and communicate impact in ways that attract partnerships, funding, and influence.</p>
+          
+          <div class="service-details">
+            <div class="detail-section">
+              <span class="detail-label">What We Deliver</span>
+              <ul class="deliverables-list">
+                <li>Strategic communications advisory</li>
+                <li>Thought leadership positioning</li>
+                <li>Media relations & visibility campaigns</li>
+                <li>Stakeholder engagement strategy</li>
+                <li>Narrative development for programs</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <span class="detail-label">Who This Is For</span>
+              <p class="detail-content">Government institutions, Development agencies, Tech startups, NGOs, Executive profiles.</p>
+            </div>
+          </div>
+          
+          <div class="service-outcome">
+            <strong>Expected Outcome</strong>
+            Stronger visibility, clearer messaging, improved stakeholder trust, and increased influence in the African tech sector.
+          </div>
+          
+          <button class="btn btn-primary service-btn" onclick="openBooking('PR & Strategic Communications')">
+            Book PR Strategy Session
+          </button>
+        </article>
+
+        <!-- Service 6: Tech Conference Event Management -->
+        <article class="service-card" data-category="pr-events">
+          <div class="service-icon" aria-hidden="true">🏛️</div>
+          <h3 class="service-title">6. Tech Conferences & Event Management</h3>
+          <p class="service-desc">We conceptualize, design, and execute high-impact technology conferences and ecosystem events that drive dialogue, visibility, and ecosystem growth across the continent.</p>
+          
+          <div class="service-details">
+            <div class="detail-section">
+              <span class="detail-label">What We Deliver</span>
+              <ul class="deliverables-list">
+                <li>Full conference design & project management</li>
+                <li>Agenda & content curation</li>
+                <li>Speaker sourcing & onboarding</li>
+                <li>Production & on-ground execution</li>
+                <li>Audience mobilization & sponsor engagement</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <span class="detail-label">Who This Is For</span>
+              <p class="detail-content">Government agencies, Development organizations, Corporates and sponsors, Tech ecosystems & hubs.</p>
+            </div>
+          </div>
+          
+          <div class="service-outcome">
+            <strong>Expected Outcome</strong>
+            World-class events that drive visibility, partnerships, ecosystem growth, and policy or industry impact.
+          </div>
+          
+          <button class="btn btn-primary service-btn" onclick="openBooking('Conference & Event Management')">
+            Produce Your Tech Event
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="section-title-wrapper">
+        <span class="section-tagline">Get In Touch</span>
+        <h2 class="section-title" id="contact-heading">Contact Our Team</h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Cards -->
+        <div class="contact-info-card">
+          <div>
+            <h3 style="margin-bottom: 1rem; font-size: 1.4rem;">Digital Equity Africa</h3>
+            <p style="color: var(--color-text-secondary); font-size: 0.95rem;">Have questions about our programs, or want to partner on a digital inclusion project? Reach out to us directly or fill in the inquiry form.</p>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">✉️</div>
+            <div class="info-text">
+              <h4>Email Inquiry</h4>
+              <p><a href="mailto:info@digitalequity.africa">info@digitalequity.africa</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">📞</div>
+            <div class="info-text">
+              <h4>Phone Number</h4>
+              <p><a href="tel:+2348028576034">+234 802 857 6034</a></p>
+            </div>
+          </div>
+
+          <div class="info-item" style="flex-direction: column; gap: 10px;">
+            <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.2rem;">Social Communities</h4>
+            <div class="social-links">
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link">
+                <span class="social-icon" aria-hidden="true">🔗</span> LinkedIn: Digital Equity Africa
+              </a>
+              <a href="https://instagram.com/digitalequityafrica" target="_blank" rel="noopener" class="social-link">
+                <span class="social-icon" aria-hidden="true">📸</span> IG: @digitalequityafrica
+              </a>
+              <a href="https://twitter.com/dequityafrica" target="_blank" rel="noopener" class="social-link">
+                <span class="social-icon" aria-hidden="true">🐦</span> Twitter: @dequityafrica
+              </a>
+              <a href="https://threads.net/@digitalequityafrica" target="_blank" rel="noopener" class="social-link">
+                <span class="social-icon" aria-hidden="true">🧵</span> Thread: @digitalequityafrica
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link">
+                <span class="social-icon" aria-hidden="true">👤</span> Facebook: Digital Equity Africa
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Container -->
+        <div class="contact-form-container">
+          <div class="success-banner" id="contact-success-banner">
+            Success! Your inquiry has been submitted. Our team will contact you shortly.
+          </div>
+          
+          <form id="direct-contact-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Full Name <span style="color: var(--color-danger);">*</span></label>
+              <input type="text" id="contact-name" class="form-input" placeholder="Your first and last name" required>
+              <span class="form-error" id="error-name" role="alert">Please enter your full name.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Email Address <span style="color: var(--color-danger);">*</span></label>
+              <input type="email" id="contact-email" class="form-input" placeholder="you@organization.com" required>
+              <span class="form-error" id="error-email" role="alert">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-org">Organization / Institution</label>
+              <input type="text" id="contact-org" class="form-input" placeholder="Company, agency, or school name">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-phone">Phone Number <span style="color: var(--color-danger);">*</span></label>
+              <input type="tel" id="contact-phone" class="form-input" placeholder="+234 ..." required>
+              <span class="form-error" id="error-phone" role="alert">Please enter a valid phone number.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-inquiry-type">Service Area of Interest</label>
+              <select id="contact-inquiry-type" class="form-input">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Corporate Digitization">Corporate Digitization</option>
+                <option value="AI Immersions">AI Immersions</option>
+                <option value="AI Literacy & Future-Readiness">AI Literacy & Future-Readiness</option>
+                <option value="Kids Tech Fest Summit">Kids Tech Fest AI Conference</option>
+                <option value="PR & Strategic Communications">PR & Strategic Communications</option>
+                <option value="Conference & Event Management">Tech Conference & Summit Management</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Inquiry Details <span style="color: var(--color-danger);">*</span></label>
+              <textarea id="contact-message" class="form-input" rows="5" placeholder="Tell us about your project or consultation request..." required></textarea>
+              <span class="form-error" id="error-message" role="alert">Please enter your inquiry details.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">Submit Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- QUICK BOOKING MODAL -->
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-text">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close booking form">&times;</button>
+      <h3 class="modal-title" id="modal-title-text">Book a Session</h3>
+      <p class="modal-subtitle">Let's design a roadmap tailored to your specific goals.</p>
+      
+      <div class="success-banner" id="modal-success-banner">
+        Thank you! Your booking request has been received.
+      </div>
+
+      <form id="modal-booking-form" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="modal-name">Name <span style="color: var(--color-danger);">*</span></label>
+          <input type="text" id="modal-name" class="form-input" required>
+          <span class="form-error" id="modal-error-name" role="alert">Name is required.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-email">Email <span style="color: var(--color-danger);">*</span></label>
+          <input type="email" id="modal-email" class="form-input" required>
+          <span class="form-error" id="modal-error-email" role="alert">Please enter a valid email.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-org">Organization</label>
+          <input type="text" id="modal-org" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-phone">Phone Number <span style="color: var(--color-danger);">*</span></label>
+          <input type="tel" id="modal-phone" class="form-input" required>
+          <span class="form-error" id="modal-error-phone" role="alert">Phone is required.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modal-service-select">Selected Service</label>
+          <select id="modal-service-select" class="form-input">
+            <option value="Corporate Digitization">Corporate Digitization</option>
+            <option value="AI Immersions">AI Immersions</option>
+            <option value="AI Literacy & Future-Readiness">AI Literacy & Future-Readiness</option>
+            <option value="Kids Tech Fest Summit">Kids Tech Fest AI Conference</option>
+            <option value="PR & Strategic Communications">PR & Strategic Communications</option>
+            <option value="Conference & Event Management">Tech Conferences & Event Management</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-teal submit-btn" style="width: 100%;">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3 style="color: white; font-family: var(--font-heading);">Digital Equity Africa</h3>
+        <p>Strategic solutions for inclusive, equitable growth across governments, businesses, and communities. Closing the digital divide across Africa through scalable local innovation.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Our Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Other Programs</h4>
+        <ul>
+          <li><a href="https://www.kidstechfest.com" target="_blank" rel="noopener">Kids Tech Fest</a></li>
+          <li><a href="https://www.myfuturemindai.com" target="_blank" rel="noopener">My Future Mind AI</a></li>
+          <li><a href="https://www.aicamp.africa" target="_blank" rel="noopener">AI Camp Africa</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-meta-data">
+        <h4 style="color: white; font-family: var(--font-heading); margin-bottom: 1.2rem;">Meta Information</h4>
+        <p><strong>Focus:</strong> Closing the digital divide and driving inclusive innovation across Africa.</p>
+        <p><strong>Keywords:</strong> ICT4D, Digital Inclusion, AI Literacy, Corporate Digitization, African Digital Economy.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Digital Equity Africa. All Rights Reserved.</p>
+      <p>Designed with accessibility for all users.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
