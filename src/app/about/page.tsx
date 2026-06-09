@@ -12,6 +12,7 @@ interface Milestone {
   title: string;
   desc: string;
   category: string;
+  bullets?: string[];
 }
 
 interface Principle {
@@ -32,28 +33,56 @@ interface MapNode {
 
 const milestones: Milestone[] = [
   {
+    year: "2023",
+    title: "Inception & Connectivity",
+    desc: "Inception and Rural Connectivity Projects.",
+    category: "Foundation",
+  },
+  {
     year: "2024",
-    title: "Inception & Government Advisory",
-    desc: "Co-designed early digital literacy agendas with federal and state departments to establish foundational frameworks.",
-    category: "Policy Advisory",
+    title: "Advisory & Expansion",
+    desc: "",
+    category: "Policy & Growth",
+    bullets: [
+      "Government Advisory: Co-designed early digital literacy agendas with federal and state departments to establish foundational frameworks.",
+      "Expansion into 5 Countries.",
+      "3 Events Hosted."
+    ],
   },
   {
     year: "2025",
-    title: "Maiden Kids Tech Fest",
-    desc: "Launched our flagship summit in Lagos, training over 5,000 children in building robotics and introductory machine learning.",
-    category: "Education Initiative",
+    title: "Ecosystem Bootstrapping",
+    desc: "",
+    category: "Education & Demo Days",
+    bullets: [
+      "Maiden Kids Tech Fest (A global AI Summit for children): Launched our flagship summit in Lagos, training over 5,000 children in ethical use of AI and introductory modules in machine learning.",
+      "Kickoff: Future Minds AI Learning Community in Lagos State in partnership with UNESCO and Oracle Academy.",
+      "Hosting Nigeria's First AI Demo Day for kids in partnership with Sterling Bank.",
+      "Hosting Independence bootcamp in Kwara State in partnership with Kwara State Government."
+    ],
   },
   {
     year: "2026",
-    title: "AI Immersions Expansion",
-    desc: "Rolled out executive AI training bootcamps across 4 regional nodes, empowering corporate boards and policymakers.",
-    category: "Executive Strategy",
+    title: "Global Reach",
+    desc: "",
+    category: "Global Programs",
+    bullets: [
+      "Leading Africa's first Children AI and Innovation delegation to China.",
+      "Rollout of global AI learning platform.",
+      "Return of Kids Tech Fest (A global AI Summit for children: Lagos, Abuja, Louisiana): To reach over 8,000 children in ethical use of AI and introductory machine learning modules. Louisiana represents our global expansion into North America.",
+      "Return of Future Minds AI Learning Community in Lagos State in partnership with UNESCO and Oracle Academy (Lagos, Abuja, Port Harcourt).",
+      "Return of AI Demo Day for kids in partnership with Sterling Bank."
+    ],
   },
   {
     year: "2027 & Beyond",
-    title: "Pan-African Operating System",
-    desc: "Scaling digital equity platforms across 15+ countries, establishing permanent learning and innovation networks.",
+    title: "Pan-African Scaling",
+    desc: "",
     category: "Ecosystem Growth",
+    bullets: [
+      "Pan-African Operating System: Scaling digital equity platforms across 15+ countries, establishing permanent learning and innovation networks.",
+      "Rollout of Innovation centers across West Africa."
+    ],
   },
 ];
 
@@ -250,9 +279,21 @@ export default function About() {
                   <h3 className="text-white font-extrabold text-xl md:text-2xl tracking-tight leading-snug">
                     {milestones[activeMilestone].title}
                   </h3>
-                  <p className="text-muted-text text-sm md:text-base leading-relaxed">
-                    {milestones[activeMilestone].desc}
-                  </p>
+                  {milestones[activeMilestone].desc && (
+                    <p className="text-muted-text text-sm md:text-base leading-relaxed">
+                      {milestones[activeMilestone].desc}
+                    </p>
+                  )}
+                  {milestones[activeMilestone].bullets && (
+                    <ul className="space-y-4 mt-2">
+                      {milestones[activeMilestone].bullets.map((bullet, idx) => (
+                        <li key={idx} className="flex items-start gap-3 text-muted-text text-sm md:text-base">
+                          <span className="w-2 h-2 rounded-full bg-cyan-electric shrink-0 mt-2" />
+                          <span className="leading-relaxed">{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </motion.div>
             </AnimatePresence>

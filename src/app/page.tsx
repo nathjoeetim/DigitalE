@@ -1,5 +1,4 @@
 "use client";
-// cheking 
 
 import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
@@ -155,7 +154,7 @@ const caseStudies = [
     client: "Digital Inclusion Initiative",
     metric: "5,000+ Attendees",
     metricDesc: "Gathered for hands-on robotics & coding in Lagos",
-    image: "/assets/africa_night_network.png",
+    image: "/assets/kids_tech_african.png",
     category: "Future Education",
     tags: ["AI Literacy", "Robotics", "Ecosystem Hubs"],
   },
@@ -512,7 +511,7 @@ export default function Home() {
                   href="/about"
                   className="px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm font-semibold hover:bg-white/10 transition-all"
                 >
-                  Our Manifesto
+                  Learn More
                 </Link>
               </div>
 
@@ -653,7 +652,7 @@ export default function Home() {
             />
             <MetricItem
               label="Events Produced"
-              value={25}
+              value={7}
               suffix="+"
               description="Hosting tech conferences, Kids Tech Fests, and panel events with global reach."
             />
